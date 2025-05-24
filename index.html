@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login & Signup</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="container">
+    <div id="form-box" class="form-box login">
+      <h2 id="form-title">Login</h2>
+      <input type="text" placeholder="Username" />
+      <input type="password" placeholder="Password" />
+      <button>Login</button>
+      <p>Don't have an account? <a href="#" onclick="switchForm('signup')">Signup</a></p>
+    </div>
+
+    <div id="signup-box" class="form-box signup" style="display: none;">
+      <h2>Signup</h2>
+      <input type="text" placeholder="Username" />
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <button>Signup</button>
+      <p>Already have an account? <a href="#" onclick="switchForm('login')">Login</a></p>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
